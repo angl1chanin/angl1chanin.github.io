@@ -1,11 +1,12 @@
 html {
-    font-size: clamp(0.7rem, 0.616rem + 0.263vw, 1rem);
+    font-size: clamp(0.438rem, 0.382rem + 0.278vw, 0.625rem);
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
+    line-height: 1;
     background-color: var(--bg-color);
     // overflow: hidden;
 }

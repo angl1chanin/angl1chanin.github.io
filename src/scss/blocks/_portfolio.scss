@@ -1,0 +1,95 @@
+.portfolio {
+    &__grid {
+        padding: 2rem 5rem;
+        display: grid;
+        grid-template-rows: repeat(2, minmax(30rem, 1fr));
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        transition: all 0.2s ease-in-out;
+        align-content: center;
+
+        @media screen and (max-width: 830px) {
+            grid-auto-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 550px) {
+            grid-template-columns: minmax(32rem, 1fr);
+        }
+    }
+
+    &__grid-card {
+        background-color: orange;
+        padding: 3rem;
+        border-radius: 1rem;
+        transition: box-shadow 0.2s linear;
+
+        &:hover {
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+
+        &_purple {
+            background-color: #5635aa;
+        }
+
+        &_orange {
+            background-color: #fea85f;
+            grid-column: span 2;
+            @media screen and (max-width: 830px) {
+                grid-column: span 1;
+            }
+        }
+
+        &_light-blue {
+            background-color: #8cd3ff;
+            grid-column: span 2;
+            @media screen and (max-width: 830px) {
+                grid-column: span 1;
+            }
+        }
+
+        &_contrast-blue {
+            background-color: #3666f5;
+        }
+    }
+
+    &__grid-card__description {
+        color: #fff;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__grid-card__title {
+        font-weight: 600;
+        font-size: 5.2rem;
+        color: #fff;
+    }
+
+    &__grid-card_hoverable {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__grid-card__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    &__grid-card_hoverable:hover &__grid-card__icon {
+        fill: #fff;
+        stroke-linecap: round;
+    }
+
+    &__grid-card__icon {
+        float: right;
+        fill: transparent;
+        stroke: #fff;
+        stroke-width: 1;
+        stroke-linecap: square;
+        transition: fill 0.2s linear, stroke-linecap 0.2s linear;
+    }
+}

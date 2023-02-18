@@ -28,9 +28,9 @@
         </symbol>
         <symbol id="open-source-symbols" viewBox="0 0 491 194" fill="none">
             <title>Open source symbols</title>
-            <path d="M360.46 6.60999L489 97.13L360.46 187.65" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M130.9 187.65L2 97.13L130.9 6.60999" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M275.01 2.26001L215.99 191.99" stroke="#2d2d37" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M360.46 6.60999L489 97.13L360.46 187.65" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M130.9 187.65L2 97.13L130.9 6.60999" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M275.01 2.26001L215.99 191.99" stroke="#016BDE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
     </defs>
 </svg>

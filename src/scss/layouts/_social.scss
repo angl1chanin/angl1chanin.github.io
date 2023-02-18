@@ -13,35 +13,36 @@
     }
 
     &__link {
-        svg {
-            transition: stroke 0.1s linear;
+        .social__icon {
+            transition: fill .2s linear, stroke-width .2s linear;
         }
 
-        &:hover {
-            svg {
-                stroke: var(--light-color-bright);
-            }
+        &:hover .social__icon {
+            fill: var(--accent-color);
+            stroke-width: 0.4;
         }
     }
 
     &__icon {
         width: 3.5rem;
         height: 3.5rem;
-        stroke: #fff;
+        stroke: var(--accent-color);
+        stroke-width: 0.6;
+        fill: transparent;
     }
 
     &__line-up {
         width: 0.2rem;
         height: 100%;
         border-radius: 2px;
-        background-color: #606060;
+        background-color: #000;
     }
 
     &__line-down {
         width: 0.2rem;
         height: 100%;
         border-radius: 2px;
-        background-color: #606060;
+        background-color: #000;
     }
 }
 

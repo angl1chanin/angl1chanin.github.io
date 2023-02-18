@@ -1,5 +1,5 @@
 .home {
-    background: linear-gradient(110deg, #2d2d37, #2d2d37 50%, #f58673 50%);
+    background-color: var(--home-bg-color);
     height: 100vh;
 
     &__container {
@@ -11,14 +11,7 @@
             'social header header'
             'social body body'
             'social body body';
-        gap: 2rem;
-
-        // @media screen and (max-width: 1024px) {
-        //     grid-template-areas:
-        //     'header header header'
-        //     'body body body'
-        //     'social social social';
-        // }
+        gap: 3rem;
     }
 
     &__header {
