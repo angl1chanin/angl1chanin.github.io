@@ -1,0 +1,53 @@
+.social {
+    display: grid;
+    grid-template-columns: 0.1fr;
+    grid-template-rows: 1fr 0.3fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        align-self: center;
+    }
+
+    &__link {
+        svg {
+            transition: stroke 0.1s linear;
+        }
+
+        &:hover {
+            svg {
+                stroke: var(--light-color-bright);
+            }
+        }
+    }
+
+    &__icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        stroke: #fff;
+    }
+
+    &__line-up {
+        width: 0.2rem;
+        height: 100%;
+        border-radius: 2px;
+        background-color: #606060;
+    }
+
+    &__line-down {
+        width: 0.2rem;
+        height: 100%;
+        border-radius: 2px;
+        background-color: #606060;
+    }
+}
+
+.social-icon {
+    fill: none;
+    path {
+        stroke: #fff;
+    }
+}

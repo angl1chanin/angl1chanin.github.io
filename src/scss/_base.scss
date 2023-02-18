@@ -1,0 +1,20 @@
+html {
+    font-size: clamp(0.7rem, 0.616rem + 0.263vw, 1rem);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    background-color: var(--bg-color);
+    // overflow: hidden;
+}
+
+.container {
+    width: min(100% - 3rem, 140rem);
+    margin-inline: auto;
+}
+
+.locked {
+    overflow: hidden;
+}

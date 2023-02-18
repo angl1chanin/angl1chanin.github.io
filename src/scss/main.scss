@@ -1,0 +1,24 @@
+// Global SCSS files
+@import './base';
+@import './fonts';
+@import './vars';
+@import './reset';
+@import './mixins';
+@import './animations';
+
+// Blocks
+// @import 'blocks/_*.scss'
+@import 'blocks/nav';
+@import 'blocks/home';
+
+// Components
+// @import 'components/_*.scss'
+@import 'components/title';
+
+// Layouts
+// @import 'layouts/_*.scss'
+@import 'layouts/social';
+@import 'layouts/header';
+
+// Sections or Pages SCSS-files
+// @import './index';
