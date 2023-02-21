@@ -1,13 +1,7 @@
-new fullpage('#fullpage', {
-    autoScrolling: true,
-    scrollHorizontally: true,
-    navigation: true,
+let anchorLinks = document.querySelectorAll('.nav__link');
+anchorLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        const section = link.getAttribute('href').replace('#', '');
+        fullpage_api.moveTo(section, 1);
+    });
 });
-
-document.querySelector(".fp-watermark").remove()
-
-const navBtn = document.querySelector(".nav__button");
-
-navBtn.onclick = function() {
-    document.body.classList.toggle("locked");
-}

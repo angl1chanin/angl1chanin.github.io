@@ -11,17 +11,31 @@
 </head>
 
 <body>
+    
     <div id="fullpage">
-        <div class="section">
+        <div class="section active" data-anchor="home">
             @@include('blocks/home.html')
         </div>
 
-        <div class="section active">
+        <div class="section" data-anchor="about">
+            @@include('blocks/about.html')
+        </div>
+
+        <div class="section" data-anchor="portfolio">
             @@include('blocks/portfolio.html')
+        </div>
+
+        <div class="section" data-anchor="skills">
+            @@include('blocks/skills.html')
+        </div>
+
+        <div class="section section__purple-bg" data-anchor="contact">
+            @@include('blocks/contact.html')
         </div>
     </div>
 
     @@include('chunks/scripts.html')
+    <!-- Design inspired by https://dribbble.com/shots/14679084-Software-Developer-Website-Interaction -->
 </body>
 
 </html>

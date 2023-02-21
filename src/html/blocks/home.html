@@ -1,18 +1,14 @@
 <section class="home">
-    <!-- @@include('sprites/bright-circle.html', {className: 'bright-circle-1', size: 500})
-    @@include('sprites/dark-circle.html', {className: 'dark-circle-1', size: 500})
-    @@include('sprites/dark-circle.html', {className: 'dark-circle-2', size: 300}) -->
-
     <div class="home__container container">
         @@include('../chunks/header.html', {className: 'home__header'})
         @@include('../chunks/social.html', {className: 'home__social'})
         <div class="home__body">
-            <div class="home__content">
+            <div class="home__content fade-right">
                 <p class="title">Hi<span class="title__comma">,</span></p>
                 <p class="title">I'm <span class="title__name">Yury</span><span class="title__comma">,</span></p>
                 <p class="home__title title">web<span>-</span>developer</p>
             </div>
-            <div class="home__illustrations">
+            <div class="home__illustrations fade-left">
                 <svg class="home__illustration_1">
                     <use xlink:href="img/svg/illustrations.svg#open-source-symbols"></use>
                 </svg>

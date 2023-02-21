@@ -1,5 +1,5 @@
 html {
-    font-size: clamp(0.438rem, 0.382rem + 0.278vw, 0.625rem);
+    font-size: 10px;
 }
 
 body {
@@ -8,11 +8,10 @@ body {
     font-weight: 300;
     line-height: 1;
     background-color: var(--bg-color);
-    // overflow: hidden;
 }
 
 .container {
-    width: min(100% - 3rem, 140rem);
+    width: min(100% - 4rem, 140rem);
     margin-inline: auto;
 }
 

@@ -38,7 +38,7 @@
         &::before {
             background-color: var(--accent-color);
             height: 2px;
-            bottom: -1px;
+            bottom: 0px;
             transform-origin: 100% 50%;
             transform: scaleX(0);
             transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
@@ -75,20 +75,13 @@
     &__toggle {
         display: none;
 
+        &:checked ~ .nav__button {
+            gap: 0;
+        }
+
         &:checked ~ .nav__button .nav__line {
             background-color: var(--home-bg-color);
-        }
-
-        &:checked ~ .nav__button .nav__line:nth-child(2) {
-            transform: rotate(13deg);
-        }
-
-        &:checked ~ .nav__button .nav__line:nth-child(1) {
-            transform: rotate(-13deg);
-        }
-
-        &:checked ~ .nav__button .nav__line:nth-child(3) {
-            transform: rotate(-13deg);
+            height: 0.1rem;
         }
 
         &:checked ~ .nav__list {
@@ -110,6 +103,8 @@
         flex-direction: column;
         position: relative;
         z-index: 2;
+        gap: 0.6rem;
+        transition: gap .2s linear;
 
         @media screen and (min-width: 1024px) {
             display: none;
@@ -121,9 +116,5 @@
         height: 0.2rem;
         background-color: var(--hamburger-lines-color);
         transition: transform 0.2s linear, background-color .2s linear;
-
-        &:not(:last-child) {
-            margin-bottom: 0.6rem;
-        }
     }
 }

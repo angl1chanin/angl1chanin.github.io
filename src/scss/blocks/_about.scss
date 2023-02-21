@@ -1,0 +1,41 @@
+.about {
+    padding: 3rem 0;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        gap: clamp(2rem, -0.37rem + 11.852vw, 10rem);
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__illustration {
+        height: clamp(15rem, 11.741rem + 16.296vw, 26rem);
+        width: 100%;
+    }
+
+    &__text {
+        max-width: 50rem;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 4rem;
+        line-height: 1.2;
+    }
+
+    &__paragraph {
+        line-height: 1.5;
+    }
+}

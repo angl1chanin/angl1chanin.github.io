@@ -28,7 +28,7 @@
         align-items: center;
         justify-content: space-around;
 
-        @media screen and (max-width: 1130px) {
+        @media screen and (max-width: 1000px) {
             flex-direction: column;
             text-align: center;
             justify-content: center;
@@ -36,7 +36,7 @@
     }
 
     &__illustration {
-        @media screen and (max-width: 1130px) {
+        @media screen and (max-width: 1000px) {
             &_1 {
                 width: 18rem;
             }
