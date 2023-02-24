@@ -3,16 +3,27 @@
         <h1 class="header__title"><span class="header__wave">👋</span>Yury</h1>
         <nav class="header__nav nav">
             <input class="nav__toggle" type="checkbox" id="nav-toggle">
-            <label class="nav__button" for="nav-toggle">
+            <label class="nav__button" id="nav-button" for="nav-toggle">
                 <span class="nav__line"></span>
                 <span class="nav__line"></span>
                 <span class="nav__line"></span>
             </label>
             <ul class="nav__list">
+                <li class="nav__item">
+                    <div class="theme">
+                        <input class="theme__checkbox" id="theme__checkbox" type="checkbox">
+                        <label class="theme__label" for="theme__checkbox">
+                            <i class="fa-solid fa-moon"></i>
+                            <i class="fa-solid fa-sun"></i>
+                            <div class="theme__ball"></div>
+                        </label>
+                    </div>
+                </li>
                 <li class="nav__item"><a class="nav__link" href="#about" data-replace="About"><span>About</span></a></a></li>
                 <li class="nav__item"><a class="nav__link" href="#portfolio" data-replace="Portfolio"><span>Portfolio</span></a></li>
                 <li class="nav__item"><a class="nav__link" href="#skills" data-replace="Skills"><span>Skills</span></a></a></li>
                 <li class="nav__item"><a class="nav__link" href="#contact" data-replace="Contact"><span>Contact</span></a></li>
+                <li class="nav__item"><a class="nav__link" href="#" data-replace="Blog"><span>Blog</span></a></li>
             </ul>
         </nav>
     </div>

@@ -1,6 +1,12 @@
 .skills {
     padding: 3rem 0;
 
+    &__container {
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
     &__title {
         text-align: center;
         margin-bottom: 7rem;
@@ -53,5 +59,33 @@
     &__grid-card__text {
         color: #56555D;
         transition: color .2s linear;
+    }
+}
+
+.dark .skills {
+    background-color: var(--dark-bg-color);
+
+    &__grid-card {
+        background-color: var(--dark-card-bg);
+
+        &:hover {
+            background-color: var(--dark-top-card-bg-hover);
+
+            .skills__grid-card__item {
+                background-color: var(--dark-card-bg);
+            }
+        }
+    }
+
+    &__grid-card__title {
+        color: var(--dark-text-color);
+    }
+
+    &__grid-card__item {
+        background-color: var(--dark-top-card-bg);
+    }
+
+    &__grid-card__text {
+        color: var(--dark-top-card-text-color);
     }
 }

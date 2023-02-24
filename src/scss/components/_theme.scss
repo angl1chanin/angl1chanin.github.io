@@ -1,0 +1,49 @@
+.theme {
+    &__checkbox {
+        display: none;
+    }
+
+    &__label {
+        width: 5rem;
+        height: 2.5rem;
+        border: 1px solid #cbcbcb;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #ededed;
+
+        position: relative;
+    }
+
+    &__checkbox:checked ~ &__label &__ball {
+        left: 50%;
+    }
+
+    &__ball {
+        position: absolute;
+        background-color: var(--dark-color);
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        transition: left .2s linear, right .2s linear;
+    }
+}
+
+.fa-moon {
+    color: var(--moon-color);
+}
+
+.fa-sun {
+    color: var(--sun-color);
+}
+
+.dark .theme {
+    &__label {
+        background-color: #545454;
+        border-color: #2b2b2b;
+    }
+}

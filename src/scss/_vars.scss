@@ -1,4 +1,8 @@
 :root {
+    // theme
+    --moon-color: #f1c40f;
+    --sun-color: #f39c12;
+
     // light mode
     --dark-color: #2D2D37;
     --light-color-bright: #F58673;
@@ -7,4 +11,12 @@
     --accent-color: #016BDE;
     --hamburger-bg: #000;
     --hamburger-lines-color: #000;
+
+    // dark mode
+    --dark-bg-color: #0c0e10;
+    --dark-text-color: #fff;
+    --dark-card-bg: #333742;
+    --dark-top-card-bg: #292D38;
+    --dark-top-card-bg-hover: #242833;
+    --dark-top-card-text-color: #5A5E69;
 }

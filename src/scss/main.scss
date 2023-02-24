@@ -18,11 +18,10 @@
 // Components
 // @import 'components/_*.scss'
 @import 'components/title';
+@import 'components/theme';
 
 // Layouts
 // @import 'layouts/_*.scss'
 @import 'layouts/social';
 @import 'layouts/header';
-
-// Sections or Pages SCSS-files
-// @import './index';
+@import 'layouts/return';

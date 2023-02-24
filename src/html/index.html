@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b1d3aae742.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/fullpage.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Portfolio</title>
@@ -13,26 +14,28 @@
 <body>
     
     <div id="fullpage">
-        <div class="section active" data-anchor="home">
+        <div class="section active">
             @@include('blocks/home.html')
         </div>
 
-        <div class="section" data-anchor="about">
+        <div class="section">
             @@include('blocks/about.html')
         </div>
 
-        <div class="section" data-anchor="portfolio">
+        <div class="section">
             @@include('blocks/portfolio.html')
         </div>
 
-        <div class="section" data-anchor="skills">
+        <div class="section">
             @@include('blocks/skills.html')
         </div>
 
-        <div class="section section__purple-bg" data-anchor="contact">
+        <div class="section">
             @@include('blocks/contact.html')
         </div>
     </div>
+
+    @@include('chunks/return.html')
 
     @@include('chunks/scripts.html')
     <!-- Design inspired by https://dribbble.com/shots/14679084-Software-Developer-Website-Interaction -->

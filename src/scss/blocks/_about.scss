@@ -1,11 +1,12 @@
 .about {
     padding: 3rem 0;
+    height: 100vh;
+    transition: background-color .2s linear;
 
     &__container {
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        place-items: center;
     }
 
     &__body {
@@ -37,5 +38,14 @@
 
     &__paragraph {
         line-height: 1.5;
+        transition: color .2s linear;
+    }
+}
+
+.dark .about {
+    background-color: var(--dark-bg-color);
+
+    &__paragraph {
+        color: var(--dark-text-color);
     }
 }

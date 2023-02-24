@@ -2,6 +2,7 @@
     font-size: clamp(3.5rem, 2.798rem + 2.193vw, 6rem);
     font-weight: 500;
     color: var(--text-color);
+    transition: color .2s linear;
 
     @media screen and (max-width: 1130px) {
         line-height: 1.2;
@@ -10,4 +11,8 @@
     &__comma, &__name {
         color: var(--accent-color);
     }
+}
+
+.dark .title {
+    color: var(--dark-text-color);
 }

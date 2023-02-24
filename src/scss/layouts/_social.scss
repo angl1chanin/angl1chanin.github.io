@@ -36,6 +36,7 @@
         height: 100%;
         border-radius: 2px;
         background-color: #000;
+        transition: background-color .2s linear;
     }
 
     &__line-down {
@@ -43,6 +44,7 @@
         height: 100%;
         border-radius: 2px;
         background-color: #000;
+        transition: background-color .2s linear;
     }
 }
 
@@ -50,5 +52,11 @@
     fill: none;
     path {
         stroke: #fff;
+    }
+}
+
+.dark .social {
+    &__line-up, &__line-down {
+        background-color: var(--dark-text-color);
     }
 }

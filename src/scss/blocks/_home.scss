@@ -1,6 +1,7 @@
 .home {
     background-color: var(--home-bg-color);
     height: 100vh;
+    transition: background-color .2s linear;
 
     &__container {
         height: 100%;
@@ -36,10 +37,26 @@
     }
 
     &__illustration {
+        &_1 {
+            stroke: #000000;
+            transition: stroke .2s linear;
+        }
+
         @media screen and (max-width: 1000px) {
             &_1 {
                 width: 18rem;
             }
+        }
+    }
+}
+
+// dark theme
+.dark .home {
+    background-color: var(--dark-bg-color);
+    
+    &__illustration {
+        &_1 {
+            stroke: #fff;
         }
     }
 }

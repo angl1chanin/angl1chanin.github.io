@@ -5,7 +5,7 @@
         column-gap: 4rem;
 
         @media screen and (max-width: 1024px) {
-            flex-direction: column-reverse;
+            flex-direction: column;
             justify-content: center;
             row-gap: 4rem;
             position: fixed;
@@ -27,6 +27,8 @@
         display: inline-block;
         color: var(--text-color);
         font-weight: 400;
+        height: 20px;
+        transition: color .2s linear;
 
         &::before,
         &::after {
@@ -88,6 +90,10 @@
             margin: 0;
         }
 
+        &:checked ~ .nav__list .nav__item .nav__link {
+            color: #fff;
+        }
+
         &:checked ~ .nav__list .nav__item .nav__link::before {
             background-color: var(--home-bg-color);
         }
@@ -116,5 +122,45 @@
         height: 0.2rem;
         background-color: var(--hamburger-lines-color);
         transition: transform 0.2s linear, background-color .2s linear;
+    }
+}
+
+// dark mode
+.dark .nav {
+    @media screen and (max-width: 1024px) {
+        &__list {
+            background-color: var(--dark-text-color);
+        }
+    }
+
+    &__toggle {
+        &:checked ~ .nav__button .nav__line {
+            background-color: var(--dark-bg-color);
+            height: 0.1rem;
+        }
+
+        &:checked ~ .nav__list .nav__item .nav__link {
+            color: var(--dark-bg-color);
+        }
+
+        &:checked ~ .nav__list .nav__item .nav__link::before {
+            background-color: var(--accent-color);
+        }
+
+        &:checked ~ .nav__list .nav__item .nav__link::after {
+            color: var(--dark-bg-color);
+        }
+    }
+
+    &__link {
+        color: var(--dark-text-color);
+
+        &::after {
+            color: var(--dark-text-color);
+        }
+    }
+
+    &__line {
+        background-color: var(--dark-text-color);
     }
 }
