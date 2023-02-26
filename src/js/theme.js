@@ -13,6 +13,11 @@ function switchTheme(theme) {
 
 switcher.addEventListener('click', () => {
     switcher.checked ? switchTheme('dark') : switchTheme('light');
-})
+});
 
-ACTIVE_THEME === null ? switchTheme('light') : switchTheme(ACTIVE_THEME);
+if (ACTIVE_THEME === null) {
+    switchTheme('light');
+    switcher.click();
+} else {
+    switchTheme(ACTIVE_THEME);
+}
