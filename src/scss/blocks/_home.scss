@@ -9,7 +9,7 @@
         grid-template-rows: 5rem repeat(2, 1fr);
         grid-template-columns: 1rem repeat(2, 1fr);
         grid-template-areas:
-            'social header header'
+            'social body body'
             'social body body'
             'social body body';
         gap: 3rem;

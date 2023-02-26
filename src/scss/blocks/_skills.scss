@@ -1,6 +1,6 @@
 .skills {
-    padding: 3rem 0;
-    height: 100vh;
+    padding: var(--section-pt);
+    transition: background-color .2s linear;
 
     &__container {
         height: 100%;

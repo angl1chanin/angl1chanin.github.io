@@ -1,5 +1,11 @@
 .header {
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    width: 100%;
     padding: 3rem 0;
+    background-color: var(--home-bg-color);
+    transition: background-color .2s linear;
 
     &__container {
         display: flex;
@@ -31,6 +37,8 @@
 }
 
 .dark .header {
+    background-color: var(--dark-bg-color);
+
     &__title {
         color: var(--dark-text-color);
     }
