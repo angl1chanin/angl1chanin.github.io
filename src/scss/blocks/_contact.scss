@@ -1,13 +1,13 @@
 .contact {
+    height: 100vh;
     padding: var(--section-pt);
     background-color: #F6F7FF;
     transition: background-color .2s linear;
 
     &__container {
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        place-items: center;
     }
 
     &__body {
@@ -18,8 +18,12 @@
         gap: 3rem;
     }
 
+    &__illustration {
+        width: 100%;
+    }
+
     &__text {
-        font-size: 5rem;
+        font-size: clamp(3rem, 2.407rem + 2.963vw, 5rem);
         max-width: 60rem;
         text-align: center;
         line-height: 1.3;
