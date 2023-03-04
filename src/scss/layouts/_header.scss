@@ -3,8 +3,8 @@
     top: 0;
     z-index: 30;
     width: 100%;
-    padding: 3rem 0;
-    background-color: var(--home-bg-color);
+    padding: 3rem;
+    background-color: transparent;
     transition: background-color .2s linear;
 
     &__container {
@@ -37,8 +37,6 @@
 }
 
 .dark .header {
-    background-color: var(--dark-bg-color);
-
     &__title {
         color: var(--dark-text-color);
     }

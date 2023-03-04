@@ -2,12 +2,6 @@
     padding: var(--section-pt);
     transition: background-color .2s linear;
 
-    &__container {
-        height: 100%;
-        display: grid;
-        place-items: center;
-    }
-
     &__title {
         text-align: center;
         margin-bottom: 4rem;
