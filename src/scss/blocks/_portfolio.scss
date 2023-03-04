@@ -1,39 +1,30 @@
 .portfolio {
-    padding: var(--section-pt);
-    transition: background-color .2s linear;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    background-color: var(--portfolio-bg);
+    transition: background-color 0.2s linear;
 
     &__grid {
         display: grid;
-        grid-template-rows: repeat(2, minmax(25rem, 30rem));
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, minmax(25rem, 40rem));
+        grid-template-columns: repeat(3, minmax(25rem, 1fr));
         gap: 2rem;
         transition: all 0.2s ease-in-out;
         align-content: center;
 
-        @media screen and (max-width: 830px) {
-            grid-auto-rows: 1fr;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media screen and (max-width: 650px) {
-            grid-template-columns: minmax(20rem, 1fr);
+        @media screen and (max-width: 1140px) {
+            grid-template-rows: minmax(30rem, 32rem);
+            grid-auto-rows: minmax(20rem, 35rem);
+            grid-template-columns: 1fr;
         }
     }
 
     &__grid-card {
-        display: flex;
-        flex-direction: column;
-        padding: 3rem;
+        position: relative;
         border-radius: 1rem;
-        transition: 
-        box-shadow 0.2s linear, 
-        background-color 0.2s linear, 
-        transform .2s linear;
-
-        &:hover {
-            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-            transform: translateY(-2px);
-        }
+        transition: background-color 0.2s linear;
+        overflow: hidden;
+        padding: 3rem;
 
         &_purple {
             background-color: #5635aa;
@@ -42,7 +33,7 @@
         &_orange {
             background-color: #fea85f;
             grid-column: span 2;
-            @media screen and (max-width: 830px) {
+            @media screen and (max-width: 1140px) {
                 grid-column: span 1;
             }
         }
@@ -50,7 +41,7 @@
         &_light-blue {
             background-color: #8cd3ff;
             grid-column: span 2;
-            @media screen and (max-width: 830px) {
+            @media screen and (max-width: 1140px) {
                 grid-column: span 1;
             }
         }
@@ -58,6 +49,19 @@
         &_contrast-blue {
             background-color: #3666f5;
         }
+    }
+
+    &__grid-card__swiper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__grid-card__content {
+        position: relative;
+        z-index: 2;
     }
 
     &__grid-card__description {
@@ -70,32 +74,6 @@
         font-weight: 600;
         font-size: clamp(3rem, 2.371rem + 3.143vw, 5.2rem);
         color: #fff;
-    }
-
-    &__grid-card_hoverable {
-        position: relative;
-        cursor: pointer;
-    }
-
-    &__grid-card__link {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 2;
-    }
-
-    &__grid-card_hoverable:hover &__grid-card__icon {
-        transform: translateX(3rem) rotate(-45deg);
-    }
-
-    &__grid-card__icon {
-        width: 11rem;
-        float: right;
-        stroke: #fff;
-        stroke-width: 1;
-        transition: transform 0.2s linear;
     }
 }
 

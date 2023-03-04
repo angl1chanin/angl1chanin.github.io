@@ -3,23 +3,15 @@ new fullpage('#fullpage', {
     autoScrolling: true,
     animateAnchor: true,
     slidesNavigation: true,
-    navigation: true,
     anchors: ['home', 'about', 'portfolio', 'skills', 'contact'],
     onLeave: function (section, origin) {
         /* 
-            It is the 'home' section. 
-            Here just close the burger menu on leave if it was opened.
-            Also, make the return to home button available
+            Make the return to home button available
         */
         if (section.index === 0) {
-            let burgerStatus = document.getElementById('nav-toggle');
-            if (burgerStatus.checked) {
-                burgerStatus.checked = false;
-            }
-
             let returnBtn = document.querySelector('.return-button');
             returnBtn.style.bottom = '3rem';
-        } 
+        }
         /*
             Code below hide return button if section is already 'home'
         */
@@ -32,7 +24,7 @@ new fullpage('#fullpage', {
 });
 
 /*
-    Here the realize of work of return button.
+    Here the realise of work of return button.
     It will move to 'home' section on click
 */
 let returnBtn = document.querySelector('.return-button');
@@ -44,10 +36,14 @@ returnBtn.addEventListener('click', () => {
     This code below remove watermark of fullpage.js library.
 */
 document.querySelector('.fp-watermark').remove();
+
+/*
+    Code below lock body for scrolling if nav menu is open
+*/
 const navBtn = document.querySelector('.nav__button');
-navBtn.onclick = function () {
-    document.body.classList.toggle('locked');
-};
+navBtn.addEventListener('click',function () {
+    fullpage_api.setAllowScrolling(false);
+});
 
 /*
     It's for navigation buttons work, because default anchors of fullpage.js
@@ -56,7 +52,9 @@ navBtn.onclick = function () {
 */
 let anchorLinks = document.querySelectorAll('.nav__link');
 anchorLinks.forEach((link) => {
+    /* Go through each link from header */
     link.addEventListener('click', function () {
+        /* Clear the link from hashtag */
         const section = link.getAttribute('href').replace('#', '');
         fullpage_api.moveTo(section, 1);
     });
