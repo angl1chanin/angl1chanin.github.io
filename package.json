@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp --production",
-    "deploy": "npm run build && cp -r dist /tmp/--dist && git checkout deploy && rm -rf dist && mv /tmp/--dist . && git add . && git commit -m 'Auto-deploy' && git push origin && git checkout main"
+    "deploy": "npm run build && cp -r dist /tmp/--dist && git checkout deploy && rm -rf dist && mv /tmp/--dist/* . && rm -f /tmp/--dist && git add . && git commit -m 'Auto-deploy' && git push origin && git checkout main"
   },
   "repository": {
     "type": "git",
