@@ -1,12 +1,12 @@
 .return-button {
     position: fixed;
-    bottom: -10rem;
-    right: 3rem;
+    bottom: -7rem;
+    right: 2rem;
     background-color: #ffffff;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     border-radius: 100%;
-    width: 6rem;
-    height: 6rem;
+    width: 4.5rem;
+    height: 4.5rem;
     display: grid;
     place-items: center;
     transition: bottom .3s linear, box-shadow .2s linear, background-color .2s linear;
@@ -22,8 +22,8 @@
     }
 
     &__icon {
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
         stroke: #3666f5;
         fill: none;
         transition: stroke .2s linear;
