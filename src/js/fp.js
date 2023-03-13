@@ -13,7 +13,7 @@
                 let returnBtn = document.querySelector('.return-button');
                 returnBtn.style.bottom = '3rem';
             } else if (origin.index === 0) {
-            /*
+                /*
             Code below hide return button if section is already 'home'
             */
                 let returnBtn = document.querySelector('.return-button');
@@ -41,7 +41,11 @@
     */
     const navBtn = document.querySelector('.nav__button');
     navBtn.addEventListener('click', function () {
-        fullpage_api.setAllowScrolling(false);
+        if (document.body.classList.contains('nav-active')) {
+            fullpage_api.setAllowScrolling(true);
+        } else {
+            fullpage_api.setAllowScrolling(false);
+        }
     });
 
     /*
