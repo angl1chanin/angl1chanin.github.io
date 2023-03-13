@@ -81,11 +81,6 @@
             gap: 0;
         }
 
-        &:checked ~ .nav__button .nav__line {
-            background-color: var(--home-bg-color);
-            height: 0.1rem;
-        }
-
         &:checked ~ .nav__list {
             margin: 0;
         }
@@ -116,13 +111,6 @@
             display: none;
         }
     }
-
-    &__line {
-        width: 2.5rem;
-        height: 0.2rem;
-        background-color: var(--hamburger-lines-color);
-        transition: transform 0.2s linear, background-color .2s linear;
-    }
 }
 
 // dark mode
@@ -134,11 +122,6 @@
     }
 
     &__toggle {
-        &:checked ~ .nav__button .nav__line {
-            background-color: var(--dark-bg-color);
-            height: 0.1rem;
-        }
-
         &:checked ~ .nav__list .nav__item .nav__link {
             color: var(--dark-bg-color);
         }
@@ -158,9 +141,5 @@
         &::after {
             color: var(--dark-text-color);
         }
-    }
-
-    &__line {
-        background-color: var(--dark-text-color);
     }
 }
