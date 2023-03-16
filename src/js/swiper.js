@@ -36,12 +36,6 @@
         loop: true,
         slidesPerView: 1,
 
-        // Autoplay
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: true,
-        },
-
         // Navigation arrows
         navigation: {
             nextEl: '.portfolio-swiper__button-next',
