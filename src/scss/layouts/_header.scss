@@ -4,9 +4,12 @@
     z-index: 30;
     width: 100%;
     padding: 3rem;
-    background-color: transparent;
-    // backdrop-filter: blur(10px);
     transition: background-color 0.2s linear;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
 
     &__container {
         display: flex;
