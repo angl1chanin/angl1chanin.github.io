@@ -1,0 +1,62 @@
+.social {
+    display: grid;
+    grid-template-columns: 0.1fr;
+    grid-template-rows: 1fr 0.3fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        align-self: center;
+    }
+
+    &__link {
+        .social__icon {
+            transition: fill .2s linear, stroke-width .2s linear;
+        }
+
+        &:hover .social__icon {
+            fill: var(--accent-color);
+            stroke-width: 0.4;
+        }
+    }
+
+    &__icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        stroke: var(--accent-color);
+        stroke-width: 0.6;
+        fill: transparent;
+    }
+
+    &__line-up {
+        width: 0.2rem;
+        height: 100%;
+        border-radius: 2px;
+        background-color: #000;
+        transition: background-color .2s linear;
+    }
+
+    &__line-down {
+        width: 0.2rem;
+        height: 100%;
+        border-radius: 2px;
+        background-color: #000;
+        transition: background-color .2s linear;
+    }
+}
+
+.social-icon {
+    fill: none;
+    path {
+        stroke: #fff;
+    }
+}
+
+.dark .social {
+    &__line-up, &__line-down {
+        background-color: var(--dark-text-color);
+    }
+}

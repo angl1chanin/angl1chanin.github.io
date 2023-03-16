@@ -1,0 +1,44 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    width: 100%;
+    padding: 3rem;
+    background-color: transparent;
+    // backdrop-filter: blur(10px);
+    transition: background-color 0.2s linear;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 300;
+        color: var(--text-color);
+        position: relative;
+    }
+
+    &__wave {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    &__title:hover &__wave {
+        animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s; /* Change to speed up or slow down */
+        animation-iteration-count: infinite; /* Never stop waving :) */
+        transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    }
+
+    &__title:hover {
+        cursor: default;
+    }
+}
+
+.dark .header {
+    &__title {
+        color: var(--dark-text-color);
+    }
+}
