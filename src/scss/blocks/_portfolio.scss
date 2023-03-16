@@ -1,5 +1,5 @@
 .portfolio {
-    padding-top: 10rem;
+    padding-top: var(--section-pt);
     padding-bottom: 4rem;
     background-color: var(--portfolio-bg);
     transition: background-color 0.2s linear;
