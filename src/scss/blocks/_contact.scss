@@ -31,7 +31,32 @@
         transition: color .2s linear;
     }
 
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    &__buttons-list {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__buttons-item a {
+        padding: 1rem 3rem;
+        color: var(--dark-text-color);
+        border-radius: 2rem;
+        background-color: var(--accent-color);
+        transition: background-color .2s linear;
+
+        &:hover {
+            background-color: #004ea1;
+        }
+    }
+
     &__socials-list {
+        height: 2rem;
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
@@ -42,7 +67,8 @@
     }
 
     &__socials-icon {
-        width: 5.5rem;
+        height: 5rem;
+        width: 5rem;
         transition: fill .2s linear;
     }
 }
@@ -52,6 +78,13 @@
 
     &__text {
         color: var(--dark-text-color);
+    }
+
+    &__buttons-item a {
+        background-color: var(--dark-card-bg);
+        &:hover {
+            background-color: var(--dark-top-card-bg-hover);
+        }
     }
 
     &__socials-icon {
