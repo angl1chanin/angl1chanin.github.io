@@ -1,0 +1,21 @@
+.slider {
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    
+    cursor: pointer;
+    height: 100%;
+
+    &__slides {
+        height: 155px;
+    }
+
+    &__scrollbar {
+        background: var(--dark-gray);
+
+        div {
+            background: var(--accent-color);
+        }
+    }
+}

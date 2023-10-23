@@ -1,0 +1,67 @@
+<section class="similar-posts">
+    <div class="similar-posts__container container">
+        <div class="similar-posts__title">
+            <h3 class="big-title">Похожие посты</h3>
+        </div>
+        <div class="similar-posts__slider posts-slider posts-swiper">
+            <div class="posts-slider__wrapper swiper-wrapper">
+                <div class="similar-posts__post post swiper-slide">
+                    <div class="post__wrapper">
+                        <div class="post__picture">
+                            <img src="assets/images/post1.png" alt="">
+                        </div>
+                        <div class="post__date">
+                            <span>12 декабря</span>
+                        </div>
+                        <p class="post__title">События жизненного цикла ReactJS</p>
+                    </div>
+                </div>
+                <div class="similar-posts__post post swiper-slide">
+                    <div class="post__wrapper">
+                        <div class="post__picture">
+                            <img src="assets/images/post2.png" alt="">
+                        </div>
+                        <div class="post__date">
+                            <span>10 декабря</span>
+                        </div>
+                        <p class="post__title">CSS Grids. Полное руководство</p>
+                    </div>
+                </div>
+                <div class="similar-posts__post post swiper-slide">
+                    <div class="post__wrapper">
+                        <div class="post__picture">
+                            <img src="assets/images/post3.png" alt="">
+                        </div>
+                        <div class="post__date">
+                            <span>5 декабря</span>
+                        </div>
+                        <a href="#"><span class="post__title">Асинхронность в JavaScript</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="posts-slider__pagination"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const swiper2 = new Swiper('.posts-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        initialSlide: 1,
+
+        breakpoints: {
+            767: {
+                slidesPerView: 3,
+            }
+        },
+
+        pagination: {
+            el: '.posts-slider__pagination',
+        },
+    });
+</script>

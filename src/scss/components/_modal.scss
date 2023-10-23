@@ -1,0 +1,83 @@
+.modal {
+    &.show &__wrapper {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__wrapper {
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.05);
+        width: 380px;
+        max-width: 100%;
+        padding: 17px 26px;
+
+        transition: all 0.18s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &__close {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+
+        cursor: pointer;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__subscription {
+        margin-bottom: 29px;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 22px;
+        }
+    }
+
+    &__form {
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 58px;
+        }
+    }
+
+    &__form-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-group {
+        border: 1px solid #ededf1;
+        border-radius: 10px;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+        &:last-child {
+            margin-bottom: 22px;
+        }
+    }
+
+    &__policy {
+        p {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: center;
+        }
+    }
+}

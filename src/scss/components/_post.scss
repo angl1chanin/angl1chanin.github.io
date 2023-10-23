@@ -1,0 +1,38 @@
+.post {
+    // width: 226px;
+
+    &__picture {
+        margin-bottom: 12px;
+        border-radius: 18px;
+        overflow: hidden;
+        height: 226px;
+
+        img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 767px) {
+            height: 280px;
+            width: 280px;
+        }
+    }
+
+    &__date {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--shadow-text);
+        cursor: default;
+
+        margin-bottom: 7px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-color);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

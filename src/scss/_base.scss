@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Onest', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+}
+
+.container {
+    width: min(100% - 20px, 768px);
+    margin-inline: auto;
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__container container">
+        <div class="header__logo">
+            <p><span>js</span>courses</p>
+        </div>
+        <button class="header__mobile-nav">
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header__nav nav">
+            <div class="nav__wrapper">
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            Статьи
+                            <svg class="nav__dropdown-icon" width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L4 4.5L7 1.5" stroke="#202326" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">JavaScript Pro</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">JavaScript для новчиков</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">JavaScript ниндзя</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            Курсы
+                            <svg class="nav__dropdown-icon" width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L4 4.5L7 1.5" stroke="#202326" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">JavaScript Pro</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">JavaScript для новчиков</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">JavaScript ниндзя</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Новости</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">О нас</a>
+                    </li>
+                </ul>
+                <div class="header__btn">
+                    <button class="btn" type="button">Начать учиться</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="modal backdrop hidden">
+    <div class="modal__wrapper">
+        <button class="modal__close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.58579 7L0.636039 11.9498L2.05025 13.364L7 8.41422L11.9497 13.364L13.364 11.9498L8.41421 7L13.364 2.05026L11.9497 0.636042L7 5.58579L2.05025 0.636042L0.636039 2.05026L5.58579 7Z" fill="#202326"/>
+            </svg>
+        </button>
+        <div class="modal__title">
+            <h2 class="title">Начать учиться</h2>
+        </div>
+        <div class="modal__subscription">
+            <p class="subscription">Оставьте заявку и наш менеджер вам перезвонит.</p>
+        </div>
+        <div class="modal__form form">
+            <form class="modal__form-wrapper" action="">
+                <div class="modal__form-group form__group">
+                    <label class="form__label" for="name">Имя</label>
+                    <input class="form__input" id="name" type="text">
+                </div>
+                <div class="modal__form-group form__group">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" id="email" type="email">
+                </div>
+                <button class="modal__form-btn btn" type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="modal__policy">
+            <p>Нажимая кнопку «Отправить», вы соглашаетесь<br>с <a href="">политикой конфиденциальности</a></p>
+        </div>
+    </div>
+</div>
+    <main>
+        <section class="main">
+    <div class="main__container container">
+        <h1 class="main__title">
+            Путь JavaScript
+        </h1>
+        <div class="main__slider">
+            <div class="main__slider-wrapper slider swiper">
+                <div class="slider__slides swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book1.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book2.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book3.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book4.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book5.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book6.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="main__slider-date date">
+                    <div class="date__day">
+                        <p>12</p>
+                        <span>
+                            <svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3.5L0 7V0L5 3.5Z" fill="#202326"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="date__month">
+                        <p>Апреля</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__slider-scrollbar slider__scrollbar swiper-scrollbar"></div>
+        </div>
+        <div class="main__mark">
+            <p>Можно выделить три основных направления для прогресса JavaScript</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        slidesPerView: 'auto',
+        spaceBetween: 12,
+        initialSlide: 1,
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
+        <div class="divider container">
+            <hr>
+        </div>
+        <section class="quote">
+    <div class="quote__container container">
+        <div class="quote__title">
+            <h2 class="title">Серверный JavaScript</h2>
+        </div>
+        <div class="quote__body">
+            <div class="quote__icon">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M38 19C38 29.4934 29.4934 38 19 38C8.50659 38 0 29.4934 0 19C0 8.50659 8.50659 0 19 0C29.4934 0 38 8.50659 38 19ZM14.0262 12.8445C11.7763 12.8445 10 14.6603 10 16.8707C10 18.9628 11.6184 20.6996 13.6709 20.8574C13.2367 21.6074 12.4868 22.4363 11.1842 23.2258C10.8289 23.4232 10.5921 23.8179 10.5921 24.2126C10.5921 25.0415 11.421 25.5941 12.171 25.2784C14.342 24.2915 18.0129 21.8837 18.0129 16.8707C18.0524 14.6603 16.2366 12.8445 14.0262 12.8445ZM19.9865 16.8707C19.9865 14.6603 21.7627 12.8445 24.0126 12.8445C26.2231 12.8445 28.0388 14.6603 27.9994 16.8707C27.9994 21.8837 24.3284 24.2915 22.1574 25.2784C21.4075 25.5941 20.5785 25.0415 20.5785 24.2126C20.5785 23.8179 20.8154 23.4232 21.1706 23.2258C22.4732 22.4363 23.2232 21.6074 23.6574 20.8574C21.6048 20.6996 19.9865 18.9628 19.9865 16.8707Z" fill="#2D1AA7"/>
+                </svg>
+            </div>
+            <div class="quote__content">
+                <div class="quote__text">
+                    <p>Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический
+                        интерфейс и думают, что он и есть система. Они определяют систему в терминах графического
+                        интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают
+                        важнейшего принципа: ввод/вывод не важен.</p>
+                </div>
+                <div class="quote__author">
+                    <p>— Р. Мартин</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="banner">
+    <div class="banner__container container">
+        <div class="banner__body">
+            <div class="banner__img">
+                <img class="banner__img_desktop" src="assets/images/banner-desktop.png" alt="banner">
+                <img class="banner__img_mobile" src="assets/images/banner-mobile.png" alt="banner">
+            </div>
+            <div class="banner__desc">
+                <p>Реклама на <a href="#">blabla.com</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="conclusion">
+    <div class="conclusion__container container">
+        <div class="conclusion__body">
+            <h2 class="conclusion__title title">Заключение</h2>
+            <p class="conclusion__text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
+        </div>
+    </div>
+</section>
+        <section class="review">
+    <div class="review__container container">
+        <div class="review__body">
+            <div class="review__title">
+                <h3 class="big-title">Что вы думаете об этой книге?</h3>
+            </div>
+            <p class="review__text subscription">Оцените статью</p>
+            <div class="review__form form">
+                <form action="">
+                    <div class="form__rate">
+                        <p class="form__digit">4</p>
+                        <div class="form__rate-stars">
+                            <div class="rating-group">
+                                <input disabled="disabled" checked="checked" class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+                                <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input checked="checked" class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+                                <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input checked="checked" class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+                                <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input checked="checked" class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+                                <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input checked="checked" class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+                                <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__text">
+                        <p class="subscription">Добавить комментарий к книге </p>
+                    </div>
+                    <div class="form__form">
+                        <div class="form__group">
+                            <label class="form__label" for="name">Имя</label>
+                            <input class="form__input" id="name" type="text">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="email">Email</label>
+                            <input class="form__input" id="email" type="email">
+                        </div>
+                        <div class="form__select-menu select-menu">
+                            <div class="select-menu__btn">
+                                <span class="select-menu__text">Выберите книгу</span>
+                                <i>
+                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5L5.5 1L10 5" stroke="#202326" stroke-width="1.5"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <ul class="select-menu__options">
+                                <li class="select-menu__option">
+                                    <span class="select-menu__option-text">JavaScript ниндзя</span>
+                                </li>
+                                <li class="select-menu__option">
+                                    <span class="select-menu__option-text">Pragmatic Guide to JavaScript</span>
+                                </li>
+                                <li class="select-menu__option">
+                                    <span class="select-menu__option-text">Pro JavaScript Techniques</span>
+                                </li>
+                                <li class="select-menu__option">
+                                    <span class="select-menu__option-text">Выразительный JavaScript</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <textarea class="form__textarea" name="review" id="" placeholder="Ваш отзыв"></textarea>
+                        <button class="form__btn btn" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="similar-posts">
+    <div class="similar-posts__container container">
+        <div class="similar-posts__title">
+            <h3 class="big-title">Похожие посты</h3>
+        </div>
+        <div class="similar-posts__slider posts-slider posts-swiper">
+            <div class="posts-slider__wrapper swiper-wrapper">
+                <div class="similar-posts__post post swiper-slide">
+                    <div class="post__wrapper">
+                        <div class="post__picture">
+                            <img src="assets/images/post1.png" alt="">
+                        </div>
+                        <div class="post__date">
+                            <span>12 декабря</span>
+                        </div>
+                        <p class="post__title">События жизненного цикла ReactJS</p>
+                    </div>
+                </div>
+                <div class="similar-posts__post post swiper-slide">
+                    <div class="post__wrapper">
+                        <div class="post__picture">
+                            <img src="assets/images/post2.png" alt="">
+                        </div>
+                        <div class="post__date">
+                            <span>10 декабря</span>
+                        </div>
+                        <p class="post__title">CSS Grids. Полное руководство</p>
+                    </div>
+                </div>
+                <div class="similar-posts__post post swiper-slide">
+                    <div class="post__wrapper">
+                        <div class="post__picture">
+                            <img src="assets/images/post3.png" alt="">
+                        </div>
+                        <div class="post__date">
+                            <span>5 декабря</span>
+                        </div>
+                        <a href="#"><span class="post__title">Асинхронность в JavaScript</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="posts-slider__pagination"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const swiper2 = new Swiper('.posts-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        initialSlide: 1,
+
+        breakpoints: {
+            767: {
+                slidesPerView: 3,
+            }
+        },
+
+        pagination: {
+            el: '.posts-slider__pagination',
+        },
+    });
+</script>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

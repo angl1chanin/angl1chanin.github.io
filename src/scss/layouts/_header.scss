@@ -1,0 +1,50 @@
+.header {
+    margin-top: 30px;
+    margin-bottom: 137px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        p {
+            color: var(--text-color);
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            span {
+                color: var(--accent-color);
+            }
+        }
+    }
+
+    &__nav {
+        justify-self: center;
+    }
+
+    &__mobile-nav {
+        display: none;
+        position: relative;
+        z-index: 51;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        transition: transform .2s linear;
+        span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: var(--text-color);
+        }
+        &.open {
+            transform: rotate(-45deg);
+        }
+        @media screen and (max-width: 767px) {
+            display: flex;
+        }
+    }
+}

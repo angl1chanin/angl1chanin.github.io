@@ -1,0 +1,82 @@
+<section class="main">
+    <div class="main__container container">
+        <h1 class="main__title">
+            Путь JavaScript
+        </h1>
+        <div class="main__slider">
+            <div class="main__slider-wrapper slider swiper">
+                <div class="slider__slides swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book1.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book2.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book3.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book4.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book5.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book6.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider__slide slide swiper-slide">
+                        <div class="slide__wrapper">
+                            <img src="assets/images/book7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="main__slider-date date">
+                    <div class="date__day">
+                        <p>12</p>
+                        <span>
+                            <svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3.5L0 7V0L5 3.5Z" fill="#202326" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="date__month">
+                        <p>Апреля</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__slider-scrollbar slider__scrollbar swiper-scrollbar"></div>
+        </div>
+        <div class="main__mark">
+            <p>Можно выделить три основных направления для прогресса JavaScript</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        slidesPerView: 'auto',
+        spaceBetween: 12,
+        initialSlide: 1,
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>

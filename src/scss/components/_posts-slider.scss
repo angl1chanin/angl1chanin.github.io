@@ -1,0 +1,31 @@
+.posts-slider {
+    overflow: clip;
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: var(--swiper-bullet-color);
+}
+
+.swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+    background: var(--accent-color);
+}

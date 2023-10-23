@@ -1,0 +1,95 @@
+.nav {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        left: -900px;
+        top: 0;
+        bottom: 0;
+        transition: left 0.2s ease-out;
+        background-color: #fff;
+        z-index: 50;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.open {
+            left: 0;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 61px;
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 35px;
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__link {
+        color: var(--text-color);
+        font-size: 15px;
+        font-weight: 500;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: var(--accent-color);
+        }
+
+        &.active {
+            color: var(--accent-color)
+        }
+    }
+
+    &__link:hover &__dropdown-icon path {
+        stroke: var(--accent-color);
+    }
+
+    &__link.active &__dropdown-icon path {
+        stroke: var(--accent-color)
+    }
+
+    &__dropdown-icon {
+        position: relative;
+        top: -1px;
+        transition: transform 0.2s linear;
+    }
+
+    &__dropdown {
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 10;
+        top: calc(100% + 20px);
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        width: 201px;
+        transition: top 0.2s linear, opacity 0.2s linear, visibility 0.2s linear;
+        box-shadow: 0px 18px 60px 0px #0000000d;
+
+        &.open {
+            top: calc(100% + 10px);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.mobile-nav {
+    overflow: hidden;
+    
+
+    &__body {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -100%;
+        background-color: var(--accent-color);
+        transition: right .2s linear, left .2s linear, visibility .2s linear;
+
+        &.active {
+            right: 0;
+            left: 0;
+            display: block;
+        }
+    }
+}

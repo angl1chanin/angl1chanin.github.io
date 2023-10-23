@@ -1,0 +1,110 @@
+.select-menu {
+    position: relative;
+
+    &.active &__btn {
+        // border-block: 1px solid var(--accent-color);
+        box-shadow: 0 0 0 1px var(--accent-color);
+    }
+
+    &.active &__btn i svg {
+        transform: rotate(0);
+    }
+
+    &.active &__options {
+        display: block;
+        opacity: 0;
+        z-index: 10;
+        animation-name: fadeInUp;
+        animation-duration: 0.4s;
+        animation-fill-mode: both;
+    }
+
+    &__btn {
+        padding: 17px 15px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(119, 119, 119, 1);
+        }
+
+        i svg {
+            transform: rotate(180deg);
+            transition: transform .2s linear;
+        }
+    }
+
+    &__options {
+        overflow: hidden;
+        position: absolute;
+        top: calc(100% + 5px);
+
+        width: 100%;
+        border-radius: 10px;
+
+        background-color: #fff;
+        box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.07);
+
+        animation-name: fadeInDown;
+        animation-duration: 0.35s;
+        animation-fill-mode: both;
+    }
+
+    &__option {
+        position: relative;
+
+        padding: 14px 17px;
+        cursor: pointer;
+        transition: background-color 0.2s linear;
+
+        &:hover {
+            background-color: var(--option-bg-color);
+            
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                width: 7px;
+                height: 100%;
+                
+                background-color: var(--accent-color);
+            }
+        }
+
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes fadeInDown {
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    to {
+        transform: translate3d(0, 20px, 0);
+        opacity: 0;
+    }
+}

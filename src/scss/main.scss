@@ -1,0 +1,27 @@
+// Global SCSS files
+@import './base';
+@import './fonts';
+@import './vars';
+@import './reset';
+@import './mixins';
+
+// Components
+// @import 'components/_*.scss'
+@import 'components/nav';
+@import 'components/btn';
+@import 'components/mobile-nav';
+@import 'components/slider';
+@import 'components/slide';
+@import 'components/title';
+@import 'components/big-title';
+@import 'components/subscription';
+@import 'components/form';
+@import 'components/select-menu';
+@import 'components/post';
+@import 'components/posts-slider';
+@import 'components/date';
+@import 'components/modal';
+
+// Sections or Pages SCSS-files
+@import './index';
+@import 'layouts/header';

@@ -1,0 +1,25 @@
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    &__day {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+
+    &__month {
+        p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}

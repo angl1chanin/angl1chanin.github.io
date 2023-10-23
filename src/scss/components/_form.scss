@@ -1,0 +1,113 @@
+.form {
+    &__rate {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        margin-bottom: 46px;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 36px;
+        }
+    }
+
+    &__digit {
+        font-size: 28px;
+        width: 20px;
+    }
+
+    &__rate-stars {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__text {
+        margin-bottom: 15px;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 12px;
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__group {
+        position: relative;
+        width: auto;
+    }
+
+    &__group.focused &__label {
+        top: 8px;
+        font-size: 9px;
+    }
+
+    &__label {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--shadow-text);
+        
+        transition: top 150ms ease-out, font-size 150ms ease-out;
+    }
+
+    &__input {
+        background-color: #fff;
+        border: none;
+        padding: 17px 15px;
+        outline: none;
+        border-radius: 10px;
+        width: 100%;
+
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--text-color);
+
+        &::placeholder {
+            font-family: inherit, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    &__textarea {
+        resize: none;
+        grid-column: 1 / -1;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--text-color);
+
+        min-height: 146px;
+        padding: 17px 15px;
+
+        @media screen and (max-width: 767px) {
+            grid-column: auto;
+
+            min-height: 200px;
+        }
+    }
+
+    &__btn {
+        width: 133px;
+
+        @media screen and (max-width: 767px) {
+            width: auto;
+        }
+    }
+}
