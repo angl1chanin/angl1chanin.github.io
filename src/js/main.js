@@ -41,11 +41,21 @@ mobileNavBtn.addEventListener('click', () => {
 const optionMenu = document.querySelector('.select-menu'),
     selectBtn = optionMenu.querySelector('.select-menu__btn'),
     options = optionMenu.querySelectorAll('.select-menu__option'),
+    optionsBlock = optionMenu.querySelector('.select-menu__options'),
     sBtn_text = optionMenu.querySelector('.select-menu__text');
 
-selectBtn.addEventListener('click', () =>
-    optionMenu.classList.toggle('active')
-);
+selectBtn.addEventListener('click', () => {
+    optionMenu.classList.toggle('active'); // Добавляем/удаляем класс 'active'
+
+    if (optionMenu.classList.contains('active')) {
+        optionsBlock.style.display = 'block';
+    } else {
+        // Используем setTimeout для скрытия через 200 миллисекунд
+        setTimeout(() => {
+            optionsBlock.style.display = 'none';
+        }, 200);
+    }
+});
 
 options.forEach((option) => {
     option.addEventListener('click', () => {
@@ -55,6 +65,7 @@ options.forEach((option) => {
         sBtn_text.innerText = selectedOption;
 
         optionMenu.classList.remove('active');
+        setTimeout(() => {optionsBlock.style.display = 'none';}, 200)
     });
 });
 
