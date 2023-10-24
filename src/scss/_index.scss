@@ -187,6 +187,11 @@
         margin-bottom: 30px;
     }
 
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
     &__img {
         margin-bottom: 13px;
 
