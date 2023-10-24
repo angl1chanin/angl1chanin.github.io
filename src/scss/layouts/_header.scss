@@ -2,6 +2,10 @@
     margin-top: 30px;
     margin-bottom: 137px;
 
+    @media screen and (max-width: 767px) {
+        margin-bottom: 47px;
+    }
+
     &__container {
         display: grid;
         grid-template-columns: repeat(2, auto);
