@@ -5,7 +5,7 @@ function toggleDropdown(e) {
     let navLink;
     // проверяем что клик был по nav__link, а не по nav__dropdown-icon
     if (parent.classList.contains('nav__item')) {
-        navLink = parent.querySelector('.nav__link')
+        navLink = parent.querySelector('.nav__link');
         dropdownContent = parent.querySelector('.nav__dropdown');
     } else {
         return;
@@ -14,11 +14,11 @@ function toggleDropdown(e) {
     if (dropdownContent.classList.contains('open')) {
         dropdownArrowIcon.style.transform = 'rotate(0deg)';
         dropdownContent.classList.remove('open');
-        navLink.classList.remove('active')
+        navLink.classList.remove('active');
     } else {
         dropdownArrowIcon.style.transform = 'rotate(180deg)';
         dropdownContent.classList.add('open');
-        navLink.classList.add('active')
+        navLink.classList.add('active');
     }
 }
 
@@ -106,15 +106,13 @@ function closeModal(modal) {
     modal.classList.add('hidden');
 }
 
-
 // form input
 let formInputs = document.querySelectorAll('.form__input');
-console.log(formInputs);
-formInputs.forEach(inp => {
+formInputs.forEach((inp) => {
     inp.addEventListener('focus', () => {
-        inp.parentNode.classList.add('focused')
-    })
+        inp.parentNode.classList.add('focused');
+    });
     inp.addEventListener('focusout', () => {
-        inp.parentNode.classList.remove('focused')
-    })
-})
+        inp.parentNode.classList.remove('focused');
+    });
+});
